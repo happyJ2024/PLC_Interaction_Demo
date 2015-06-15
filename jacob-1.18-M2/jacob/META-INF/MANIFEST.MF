@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Created-By: 1.6.0_37-b06 (Sun Microsystems Inc.)
+Built-By: joe
+
+Name: com.jacob
+Specification-Title: JACOB : Java COM Bridge
+Specification-Vendor: http://jacob-project.sourceforge.net
+Implementation-Title: JACOB : Java COM Bridge Java libraries
+Implementation-Version: 1.18-M2 build 02 on 27-May-2014 23:49:48
+Trusted-Library: true
+Application-Name: Java-Windows Bridge
+Permissions: all-permissions
+Codebase: *
+
