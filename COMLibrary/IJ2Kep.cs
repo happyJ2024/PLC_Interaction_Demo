@@ -11,12 +11,16 @@ namespace COMLibrary
     public interface IJ2Kep
     {
 
-        [DispId(4)]
+        [DispId(1001)]
         bool Connect();
                
-        [DispId(5)]
+        [DispId(1002)]
         bool Disconnect();
 
+        [DispId(1003)]
+        void AddTag(string tagName,string tagValueType);
 
+        [DispId(1004)]
+        bool ReConnect();
     }
 }

@@ -10,7 +10,7 @@ namespace COMLibrary
     [InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
     public interface IJ2KepEvent
     {
-        [DispId(53)]
+        [DispId(2001)]
         void OnTagValueChangedEvent(string data);
 
         

@@ -48,13 +48,10 @@
     <Compile Include="IJ2Kep.cs" />
     <Compile Include="IJ2KepEvent.cs" />
     <Compile Include="KepwareClient.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="OPCConnector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TestForm\TestForm.csproj">
-      <Project>{505fff42-ae43-4aa8-96dc-a6fab20bc438}</Project>
-      <Name>TestForm</Name>
-    </ProjectReference>
+    <Compile Include="Tag.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

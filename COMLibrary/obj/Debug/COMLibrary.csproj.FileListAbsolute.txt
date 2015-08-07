@@ -16,3 +16,9 @@ D:\TestProject\ClientAceExample\COMLibrary\bin\Debug\TestForm.pdb
 D:\TestProject\ClientAceExample\COMLibrary\obj\Debug\COMLibrary.csprojResolveAssemblyReference.cache
 D:\TestProject\ClientAceExample\COMLibrary\obj\Debug\COMLibrary.dll
 D:\TestProject\ClientAceExample\COMLibrary\obj\Debug\COMLibrary.pdb
+D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\COMLibrary.dll
+D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\COMLibrary.pdb
+D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\COMLibrary.tlb
+D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\Kepware.ClientAce.OpcClient.dll
+D:\GitHubProject\OPC_Demo\COMLibrary\obj\Debug\COMLibrary.dll
+D:\GitHubProject\OPC_Demo\COMLibrary\obj\Debug\COMLibrary.pdb

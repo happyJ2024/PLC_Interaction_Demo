@@ -17,3 +17,13 @@ D:\TestProject\ClientAceExample\TestForm\obj\Debug\TestForm.Properties.Resources
 D:\TestProject\ClientAceExample\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
 D:\TestProject\ClientAceExample\TestForm\obj\Debug\kepwareForm.OPCConnector.resources
 D:\TestProject\ClientAceExample\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+D:\GitHubProject\OPC_Demo\TestForm\bin\Debug\TestForm.exe.config
+D:\GitHubProject\OPC_Demo\TestForm\obj\Debug\TestForm.exe
+D:\GitHubProject\OPC_Demo\TestForm\obj\Debug\TestForm.pdb
+D:\GitHubProject\OPC_Demo\TestForm\bin\Debug\TestForm.exe
+D:\GitHubProject\OPC_Demo\TestForm\bin\Debug\TestForm.pdb
+D:\GitHubProject\OPC_Demo\TestForm\bin\Debug\Kepware.ClientAce.OpcClient.dll
+D:\GitHubProject\OPC_Demo\TestForm\obj\Debug\kepwareForm.OPCConnector.resources
+D:\GitHubProject\OPC_Demo\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+D:\GitHubProject\OPC_Demo\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+D:\GitHubProject\OPC_Demo\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache

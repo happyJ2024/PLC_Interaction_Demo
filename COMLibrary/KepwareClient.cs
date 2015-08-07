@@ -7,7 +7,7 @@ using System.Threading;
 using System.Windows.Forms;
 using Kepware.ClientAce.OpcCmn;
 using Kepware.ClientAce.OpcDaClient;
-using kepwareForm;
+using KepwareClient;
 
 namespace COMLibrary
 {
@@ -23,41 +23,85 @@ namespace COMLibrary
         public event OnTagValueChangedDelegate OnTagValueChangedEvent;
 
         private Thread opcConnectorThread;
+
+        private List<Tag> defaultTagList = new List<Tag>();
+
+
+        public KepwareClient()
+        {
+            InitDefaultTagList();
+        }
+
         public bool Connect()
         {
             opcConnectorThread = new Thread(new ParameterizedThreadStart(RunConnector));
             opcConnectorThread.Start();
-          
+
             return true;
         }
 
         private void RunConnector(object obj)
         {
-            OPCConnector conn = new kepwareForm.OPCConnector();
-            conn.OnTagValueChanged += OPCConnector_OnValueChanged;
+            OPCConnector connector = new OPCConnector();
+            InitConnectorTagList(connector);
+            connector.ConnectToServer();
+            connector.SubscribeClientEvent();
 
-            Application.Run(conn);
+            connector.OnTagValueChanged += OPCConnector_OnValueChanged;
+
+            //Important to Start a message loop by Apllication.Run()
+            Application.Run();
+
+        }
+        private void InitConnectorTagList(OPCConnector connector)
+        {
+            foreach (var tag in defaultTagList)
+            {
+                connector.TagList.Add(tag);
+            }
         }
 
+        private void InitDefaultTagList()
+        {
+            defaultTagList.Add(new Tag("Channel1.Device1.testFloat", "Float"));
+            defaultTagList.Add(new Tag("Channel1.Device1.testBoolean", "Boolean"));
+            defaultTagList.Add(new Tag("Channel1.Device1.testString", "String"));
+            defaultTagList.Add(new Tag("Channel1.Device1.testInt", "Int"));
+        }
         public void OPCConnector_OnValueChanged(string data)
-        { 
+        {
             if (OnTagValueChangedEvent != null)
             {
-
                 Console.WriteLine("Trigger OnTagValueChangedEvent");
-                AsyncCallback callback=new AsyncCallback(callbackMethod);
+                AsyncCallback callback = new AsyncCallback(ValueChangedNotifyCallback);
                 OnTagValueChangedEvent.BeginInvoke(data, callback, null);
             }
         }
-        void callbackMethod(IAsyncResult r)
+        void ValueChangedNotifyCallback(IAsyncResult r)
         {
-            //Console.WriteLine("callbackMethod");
+            Logger.Info("The value change has been been notified to interface");
         }
 
         public bool Disconnect()
         {
             opcConnectorThread.Abort();
             return true;
+        }
+
+
+        public void AddTag(string tagName, string tagValueType)
+        {
+            defaultTagList.Add(new Tag(tagName, tagValueType));
+        }
+
+        public bool ReConnect()
+        {
+            var disconnectSuccess = Disconnect();
+            if (disconnectSuccess)
+            {
+                return Connect();
+            }
+            return disconnectSuccess;
         }
     }
 }
