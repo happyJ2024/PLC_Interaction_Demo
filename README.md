@@ -1,7 +1,7 @@
-# OPC_Demo
-OPC project demo for Tesla to read PLC with java and C#
-Need to read value from PLC hardware.
-we find a middleware named Kepware, and try to intergrate it into our java project.
-Kepweare is based on C#, we package its dll as COM, then we call COM using JACOB in java project.
-
-Kepware + C# + COM + JACOB + Java
+# OPC Demo
+This is an project to read data from PLC with java and C#
+We got a middleware named Kepware that support PLC hardware.
+To use its library, we package the library dlls as COM component since Kepware is based on C#
+Then we use 3-rd java library (JACOB) to use COM component in java project.
+Technology Architecture:
+        Kepware Library + C#  + COM + JACOB + Java
