@@ -7,9 +7,9 @@ using System.Threading;
 using System.Windows.Forms;
 using Kepware.ClientAce.OpcCmn;
 using Kepware.ClientAce.OpcDaClient;
-using KepwareClient;
+ 
 
-namespace COMLibrary
+namespace KepwareClientCOM
 {
 
     [Guid("76BBA445-7554-4308-8487-322BAE955527")]
@@ -25,7 +25,7 @@ namespace COMLibrary
         private Thread opcConnectorThread;
 
         private List<Tag> defaultTagList = new List<Tag>();
-
+        private OPCConnector connector = new OPCConnector();
 
         public KepwareClient()
         {
@@ -39,10 +39,14 @@ namespace COMLibrary
 
             return true;
         }
+        public bool WriteTagValue(string tagName, string value)
+        {
+            connector.WriteTag(tagName, value);
+            return true;
+        }
 
         private void RunConnector(object obj)
-        {
-            OPCConnector connector = new OPCConnector();
+        { 
             InitConnectorTagList(connector);
             connector.ConnectToServer();
             connector.SubscribeClientEvent();

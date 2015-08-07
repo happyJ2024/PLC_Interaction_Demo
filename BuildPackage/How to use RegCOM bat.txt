@@ -1,0 +1,19 @@
+Fixed Files:
+
+ jacob.har 
+ jacob-1.18-M2-x64.dll
+ jacob-1.18-M2-x86.dll
+ Kepware.ClientAce.OpcClient.dll
+ 
+ 
+Update Files:
+  KepwareClientCOM.dll
+  KepwareClientCOM.tlb
+  
+Prerequisite:
+	.NET Framework 4.0 
+	Java7
+  
+1. put the update files in current folder
+2. run RegCOM.bat, it will auto register COM into system, and then java application can use it.
+3. Done

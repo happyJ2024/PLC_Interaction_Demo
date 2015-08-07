@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace COMLibrary
+namespace KepwareClientCOM
 {
     [Guid("73221ff4-367c-46a3-b865-b94a7876831a")]
     [InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]

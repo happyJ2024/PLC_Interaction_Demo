@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace COMLibrary
+namespace KepwareClientCOM
 {
     [Guid("73321ff4-367c-46a3-b865-b94a7876831a")]
     [InterfaceType(ComInterfaceType.InterfaceIsDual)]
@@ -22,5 +22,8 @@ namespace COMLibrary
 
         [DispId(1004)]
         bool ReConnect();
+
+        [DispId(1005)]
+        bool WriteTagValue(string tagName, string value);
     }
 }

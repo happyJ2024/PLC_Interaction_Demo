@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace KepwareClient
+namespace KepwareClientCOM
 {
     public class Tag
     {

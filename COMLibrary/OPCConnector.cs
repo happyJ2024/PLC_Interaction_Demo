@@ -9,10 +9,10 @@ using System.Diagnostics;
 
 using Kepware.ClientAce.OpcDaClient;
 using Kepware.ClientAce.OpcCmn;
-using COMLibrary;
 
 
-namespace KepwareClient
+
+namespace KepwareClientCOM
 {
     public partial class OPCConnector
     {
@@ -390,6 +390,69 @@ namespace KepwareClient
             }
 
 
+        }
+
+        private int RandomNumber(int MaxNumber, int MinNumber)
+        {
+            //initialize random number generator
+            Random r = new Random(System.DateTime.Now.Millisecond);
+
+            //if passed incorrect arguments, swap them
+            //can also throw exception or return 0
+
+            if (MinNumber > MaxNumber)
+            {
+                int t = MinNumber;
+                MinNumber = MaxNumber;
+                MaxNumber = t;
+            }
+
+            return r.Next(MinNumber, MaxNumber);
+        }
+        public bool WriteTag(string tagName, string value)
+        {
+            try
+            {
+
+                // initialize the return code varaible
+                ReturnCode returnCode;
+                // Define parameters for Write method:
+
+                // The item identifiers array describe the items we wish to write to.
+                // We may write to more than one item at a time. However, the GUI in
+                // this example is set up so that only one item can be written to at
+                // a time.
+                ItemIdentifier[] itemIdentifiers = new ItemIdentifier[1];
+                itemIdentifiers[0] = new ItemIdentifier();
+                itemIdentifiers[0].ItemName = tagName;
+                //itemIdentifiers[0].ClientHandle = itemIndex;
+
+                // The itemValues array contains the values we wish to write to the
+                // items.
+
+                ItemValue[] itemValues = new ItemValue[1];
+                itemValues[0] = new ItemValue();
+                itemValues[0].Value = value;
+
+                int TransID = RandomNumber(65535, 1);
+
+                // Call the Write API method:
+                returnCode = daServerMgt.WriteAsync(TransID, ref itemIdentifiers, itemValues);
+
+                // Handle result:
+                if (returnCode != ReturnCode.SUCCEEDED)
+                {
+                    Logger.Info("Async Write failed with a result of " + System.Convert.ToString(itemIdentifiers[0].ResultID.Code) + "\r\n" + "Description: " + itemIdentifiers[0].ResultID.Description);
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error("Handled Async Write exception. Reason: " + ex.Message);
+                return true;
+
+            }
         }
 
 

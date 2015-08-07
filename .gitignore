@@ -1,0 +1,6 @@
+COMLibrary/obj/
+COMLibrary/bin/
+COMLibrary/KepwareClientSolution.v12.suo
+JAVAGUI/build/
+BuildPackage/KepwareClientCOM.dll
+BuildPackage/KepwareClientCOM.tlb

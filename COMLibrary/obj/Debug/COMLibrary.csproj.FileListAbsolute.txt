@@ -1,24 +1,6 @@
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\bin\Debug\COMLibrary.dll
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\bin\Debug\COMLibrary.pdb
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\bin\Debug\COMLibrary.tlb
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\bin\Debug\Kepware.ClientAce.OpcClient.dll
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\bin\Debug\TestForm.exe
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\bin\Debug\TestForm.pdb
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\obj\Debug\COMLibrary.csprojResolveAssemblyReference.cache
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\obj\Debug\COMLibrary.dll
-D:\TestProject\Simple ClientAce OPC DA VS2010-12 Event Example_CS\COMLibrary\obj\Debug\COMLibrary.pdb
-D:\TestProject\ClientAceExample\COMLibrary\bin\Debug\COMLibrary.dll
-D:\TestProject\ClientAceExample\COMLibrary\bin\Debug\COMLibrary.pdb
-D:\TestProject\ClientAceExample\COMLibrary\bin\Debug\COMLibrary.tlb
-D:\TestProject\ClientAceExample\COMLibrary\bin\Debug\Kepware.ClientAce.OpcClient.dll
-D:\TestProject\ClientAceExample\COMLibrary\bin\Debug\TestForm.exe
-D:\TestProject\ClientAceExample\COMLibrary\bin\Debug\TestForm.pdb
-D:\TestProject\ClientAceExample\COMLibrary\obj\Debug\COMLibrary.csprojResolveAssemblyReference.cache
-D:\TestProject\ClientAceExample\COMLibrary\obj\Debug\COMLibrary.dll
-D:\TestProject\ClientAceExample\COMLibrary\obj\Debug\COMLibrary.pdb
-D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\COMLibrary.dll
-D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\COMLibrary.pdb
-D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\COMLibrary.tlb
-D:\GitHubProject\OPC_Demo\COMLibrary\bin\Debug\Kepware.ClientAce.OpcClient.dll
-D:\GitHubProject\OPC_Demo\COMLibrary\obj\Debug\COMLibrary.dll
-D:\GitHubProject\OPC_Demo\COMLibrary\obj\Debug\COMLibrary.pdb
+D:\workspace\KepwareForTelsa\Project\COMLibrary\bin\Debug\KepwareClientCOM.dll
+D:\workspace\KepwareForTelsa\Project\COMLibrary\bin\Debug\KepwareClientCOM.pdb
+D:\workspace\KepwareForTelsa\Project\COMLibrary\bin\Debug\KepwareClientCOM.tlb
+D:\workspace\KepwareForTelsa\Project\COMLibrary\bin\Debug\Kepware.ClientAce.OpcClient.dll
+D:\workspace\KepwareForTelsa\Project\COMLibrary\obj\Debug\KepwareClientCOM.dll
+D:\workspace\KepwareForTelsa\Project\COMLibrary\obj\Debug\KepwareClientCOM.pdb
